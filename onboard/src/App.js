@@ -25,7 +25,7 @@ const initialFormValues = {
   email: '',
   password: '',
   // Check Box
-  tos: false,
+  tos: '',
 }
 const initialFormErrors = {
   username: '',
@@ -103,7 +103,7 @@ function App() {
       username: formValues.username.trim(),
       email: formValues.email.trim(),
       password: formValues.password.trim(),
-      tos: formValues.tos,
+      tos: formValues.tos.trim(),
     }
     // Post new user
     postNewUser(newUser)
