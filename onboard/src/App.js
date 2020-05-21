@@ -92,7 +92,7 @@ function App() {
     const { checked } = evt.target
     setFormValues({
       ...formValues,
-      [name]: checked
+      [name]: 'on'
     })
   }
 
